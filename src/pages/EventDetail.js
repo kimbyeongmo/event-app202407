@@ -1,6 +1,6 @@
 import React from 'react';
 import { redirect, useLoaderData, useRouteLoaderData } from 'react-router-dom';
-import EventItem from '../components/EventItem';
+import EventItem from '../components/events/EventItem';
 import { EVENT_URL } from '../config/host-config';
 
 const EventDetail = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import EventList from '../components/EventList';
-import EventSkeleton from '../components/EventSkeleton';
+import EventList from '../components/events/EventList';
+import EventSkeleton from '../components/events/EventSkeleton';
 import { EVENT_URL } from '../config/host-config';
 
 // npm install loadsh
