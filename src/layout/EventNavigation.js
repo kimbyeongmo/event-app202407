@@ -7,7 +7,6 @@ const EventsNavigation = () => {
   const activeClassFn = ({isActive}) => {
     return isActive ? styles.active : undefined;
   };
-
   return (
     <header className={styles.header}>
       <nav>

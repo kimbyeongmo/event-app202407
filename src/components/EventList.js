@@ -4,10 +4,8 @@ import { Link } from 'react-router-dom';
 
 const EventList = ({ eventList }) => {
 
-  // loader 데이터는 loader를 선언한 페이지 밑에 있는 하위컴포넌트 어디서든 사용가능
-  // const data = useLoaderData();
-  // console.log('loader data : ', data);
-  
+  // loader데이터는 loader를 선언한 페이지 밑에있는 하위컴포넌트 어디서든 사용가능
+  // const eventList = useLoaderData();
 
   const {events, list, item, content} = styles;
 

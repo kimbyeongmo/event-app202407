@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './EventSkeleton.module.scss';
 
-const EventSkeleton = ({count}) => {
+const EventSkeleton = ({ count }) => {
   return (
     <div className={styles.events}>
       <div className={styles.list}>
@@ -11,7 +11,7 @@ const EventSkeleton = ({count}) => {
               <div
                 className={styles.skeleton}
                 key={index}
-                >
+              >
                 <div className={styles.imageSkeleton} />
                 <div className={styles.contentSkeleton}>
                   <div className={styles.titleSkeleton} />
