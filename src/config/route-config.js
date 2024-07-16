@@ -60,7 +60,7 @@ const homeRouter = [
   {
     index: true,
     element: <WelcomePage />,
-    action : loginAction
+    action: loginAction
   }, // 웰컴 페이지 (로그인화면 or 로그인완료화면)
   {
     path: 'sign-up',
