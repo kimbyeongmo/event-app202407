@@ -1,10 +1,9 @@
-import React from 'react';
-import { NavLink, useRouteLoaderData } from 'react-router-dom';
-import styles from './MainNavigation.module.scss';
+import React from "react";
+import { Form, NavLink, useRouteLoaderData } from "react-router-dom";
+import styles from "./MainNavigation.module.scss";
 
 const MainNavigation = () => {
-
-  const userData = useRouteLoaderData('user-data');
+  const userData = useRouteLoaderData("user-data");
 
   const activeFn = ({ isActive }) => {
     // NavLink 컴포넌트에 className프롭스에 함수를 전달하면
@@ -18,26 +17,21 @@ const MainNavigation = () => {
       <nav>
         <ul className={styles.list}>
           <li>
-            <NavLink
-              to=""
-              className={activeFn}
-              end
-            >
+            <NavLink to="" className={activeFn} end>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="events"
-              className={activeFn}
-            >
+            <NavLink to="events" className={activeFn}>
               Events
             </NavLink>
           </li>
 
           {userData && (
             <li>
-              <button style={{ width: '100%' }}>Logout</button>
+              <Form action='/logout' method='POST'>
+                <button style={{ width: "100%" }}>Logout</button>
+              </Form>
             </li>
           )}
         </ul>
